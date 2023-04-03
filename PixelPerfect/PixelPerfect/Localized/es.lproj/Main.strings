@@ -1,0 +1,113 @@
+
+/* Class = "NSMenuItem"; title = "Pixel Perfect"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "Pixel Perfect";
+
+/* Class = "NSMenuItem"; title = "Enter Full Screen"; ObjectID = "4J7-dP-txa"; */
+"4J7-dP-txa.title" = "Pantalla completa";
+
+/* Class = "NSMenuItem"; title = "Quit Pixel Perfect"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Salir de Pixel Perfect";
+
+/* Class = "NSMenuItem"; title = "About Pixel Perfect"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "Acerca de Pixel Perfect";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Menú principal";
+
+/* Class = "NSMenuItem"; title = "Close"; ObjectID = "DVo-aG-piG"; */
+"DVo-aG-piG.title" = "Cerrar";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
+"F2S-fz-NVQ.title" = "Ayuda";
+
+/* Class = "NSMenuItem"; title = "Pixel Perfect Help"; ObjectID = "FKE-Sm-Kum"; */
+"FKE-Sm-Kum.title" = "Ayuda de Pixel Perfect";
+
+/* Class = "NSMenuItem"; title = "View"; ObjectID = "H8h-7b-M4v"; */
+"H8h-7b-M4v.title" = "Ver";
+
+/* Class = "NSMenu"; title = "View"; ObjectID = "HyV-fh-RgO"; */
+"HyV-fh-RgO.title" = "Ver";
+
+/* Class = "NSTextFieldCell"; title = "Enable iPhone and iPad apps to run at native resolution with pixel-perfect graphics and razor sharp text."; ObjectID = "IAR-Nf-69C"; */
+"IAR-Nf-69C.title" = "Habilita que las aplicaciones de iPhone e iPad se ejecuten con una resolución nativa y una gráfica y texto perfectos.";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "IQV-ah-pTq"; */
+"IQV-ah-pTq.title" = "Celda de texto";
+
+/* Class = "NSWindow"; title = "Pixel Perfect"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "Pixel Perfect";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Mostrar todo";
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
+"LE2-aR-0XJ.title" = "Traer todo al frente";
+
+/* Class = "NSMenuItem"; title = "Reload"; ObjectID = "MES-zl-kn3"; */
+"MES-zl-kn3.title" = "Recargar";
+
+/* Class = "NSButtonCell"; title = "Add App"; ObjectID = "NBe-PV-Qww"; */
+"NBe-PV-Qww.title" = "Agregar aplicación";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
+"NMo-om-nkz.title" = "Servicios";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "Minimizar";
+
+/* Class = "NSMenuItem"; title = "Hide Pixel Perfect"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Ocultar Pixel Perfect";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
+"R4o-n2-Eq4.title" = "Zoom";
+
+/* Class = "NSTextFieldCell"; title = "Loading applications..."; ObjectID = "REV-t2-qWC"; */
+"REV-t2-qWC.title" = "Cargando aplicaciones...";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "Ventana";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Ocultar otros";
+
+/* Class = "NSTextFieldCell"; title = "App"; ObjectID = "Wxv-iP-hRi"; */
+"Wxv-iP-hRi.title" = "Aplicación";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "Ventana";
+
+/* Class = "NSMenu"; title = "File"; ObjectID = "bib-Uj-vzu"; */
+"bib-Uj-vzu.title" = "Archivo";
+
+/* Class = "NSButtonCell"; title = "Reset All"; ObjectID = "cOf-V0-dtx"; */
+"cOf-V0-dtx.title" = "Restablecer todo";
+
+/* Class = "NSMenuItem"; title = "File"; ObjectID = "dMs-cI-mzQ"; */
+"dMs-cI-mzQ.title" = "Archivo";
+
+/* Class = "NSMenuItem"; title = "Show Debug Options"; ObjectID = "dz4-3s-ctT"; */
+"dz4-3s-ctT.title" = "Mostrar opciones de depuración";
+
+/* Class = "NSButtonCell"; title = "Enable All"; ObjectID = "fSV-R6-sjR"; */
+"fSV-R6-sjR.title" = "Activar todo";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
+"hz9-B4-Xy5.title" = "Servicios";
+
+/* Class = "NSMenu"; title = "Pixel Perfect"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "Pixel Perfect";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "Ayuda";
+
+/* Class = "NSTextFieldCell"; title = "Pixel Perfect"; ObjectID = "y80-Sh-8yF"; */
+"y80-Sh-8yF.title" = "Pixel Perfect";
+
+"081-Zm-KOJ.title" = "Consejos de solución de problemas";
+"7Sf-6F-PYP.title" = "Buscar actualizaciones...";
+"HGw-ca-BVt.title" = "Página del proyecto";
+"Kn8-XW-HmN.title" = "Enviar comentarios";
+"V3T-w1-ZzY.title" = "Buscar actualizaciones...";
+"orx-WS-NYi.title" = "Obtener ayuda de la comunidad";
+"taZ-O3-hGi.title" = "Actualización disponible";

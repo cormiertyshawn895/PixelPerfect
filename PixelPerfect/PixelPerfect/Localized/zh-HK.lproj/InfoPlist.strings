@@ -1,0 +1,3 @@
+"CFBundleName" = "超解像度";
+"CFBundleDisplayName" = "超解像度(右擊以開啟)";
+"NSAppleEventsUsageDescription" = "需要存取終端機才能顯示偵錯設定。";

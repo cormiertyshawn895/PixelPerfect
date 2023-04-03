@@ -1,0 +1,3 @@
+"CFBundleName" = "Pixel Perfect";
+"CFBundleDisplayName" = "Pixel Perfect (høyreklikk for å åpne)";
+"NSAppleEventsUsageDescription" = "Tilgang til Terminal kreves for å vise feilsøkingsinnstillinger.";

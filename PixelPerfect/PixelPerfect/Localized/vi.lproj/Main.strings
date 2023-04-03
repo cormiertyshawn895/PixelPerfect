@@ -1,0 +1,113 @@
+
+/* Class = "NSMenuItem"; title = "Pixel Perfect"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "Điểm ảnh hoàn hảo";
+
+/* Class = "NSMenuItem"; title = "Enter Full Screen"; ObjectID = "4J7-dP-txa"; */
+"4J7-dP-txa.title" = "Toàn màn hình";
+
+/* Class = "NSMenuItem"; title = "Quit Pixel Perfect"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Thoát Điểm ảnh hoàn hảo";
+
+/* Class = "NSMenuItem"; title = "About Pixel Perfect"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "Về Điểm ảnh hoàn hảo";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Trang chủ";
+
+/* Class = "NSMenuItem"; title = "Close"; ObjectID = "DVo-aG-piG"; */
+"DVo-aG-piG.title" = "Đóng";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
+"F2S-fz-NVQ.title" = "Trợ giúp";
+
+/* Class = "NSMenuItem"; title = "Pixel Perfect Help"; ObjectID = "FKE-Sm-Kum"; */
+"FKE-Sm-Kum.title" = "Trợ giúp Điểm ảnh hoàn hảo";
+
+/* Class = "NSMenuItem"; title = "View"; ObjectID = "H8h-7b-M4v"; */
+"H8h-7b-M4v.title" = "Xem";
+
+/* Class = "NSMenu"; title = "View"; ObjectID = "HyV-fh-RgO"; */
+"HyV-fh-RgO.title" = "Xem";
+
+/* Class = "NSTextFieldCell"; title = "Enable iPhone and iPad apps to run at native resolution with pixel-perfect graphics and razor sharp text."; ObjectID = "IAR-Nf-69C"; */
+"IAR-Nf-69C.title" = "Cho phép ứng dụng iPhone và iPad chạy ở độ phân giải nguyên gốc với đồ họa hoàn hảo và văn bản sắc nét.";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "IQV-ah-pTq"; */
+"IQV-ah-pTq.title" = "Văn bản";
+
+/* Class = "NSWindow"; title = "Pixel Perfect"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "Điểm ảnh hoàn hảo";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Hiển thị tất cả";
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
+"LE2-aR-0XJ.title" = "Mang tất cả lên trước";
+
+/* Class = "NSMenuItem"; title = "Reload"; ObjectID = "MES-zl-kn3"; */
+"MES-zl-kn3.title" = "Tải lại";
+
+/* Class = "NSButtonCell"; title = "Add App"; ObjectID = "NBe-PV-Qww"; */
+"NBe-PV-Qww.title" = "Thêm ứng dụng";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
+"NMo-om-nkz.title" = "Dịch vụ";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "Thu nhỏ";
+
+/* Class = "NSMenuItem"; title = "Hide Pixel Perfect"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Ẩn Điểm ảnh hoàn hảo";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
+"R4o-n2-Eq4.title" = "Phóng to";
+
+/* Class = "NSTextFieldCell"; title = "Loading applications..."; ObjectID = "REV-t2-qWC"; */
+"REV-t2-qWC.title" = "Đang tải ứng dụng...";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "Cửa sổ";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Ẩn các ứng dụng khác";
+
+/* Class = "NSTextFieldCell"; title = "App"; ObjectID = "Wxv-iP-hRi"; */
+"Wxv-iP-hRi.title" = "Ứng dụng";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "Cửa sổ";
+
+/* Class = "NSMenu"; title = "File"; ObjectID = "bib-Uj-vzu"; */
+"bib-Uj-vzu.title" = "Tệp";
+
+/* Class = "NSButtonCell"; title = "Reset All"; ObjectID = "cOf-V0-dtx"; */
+"cOf-V0-dtx.title" = "Đặt lại tất cả";
+
+/* Class = "NSMenuItem"; title = "File"; ObjectID = "dMs-cI-mzQ"; */
+"dMs-cI-mzQ.title" = "Tệp";
+
+/* Class = "NSMenuItem"; title = "Show Debug Options"; ObjectID = "dz4-3s-ctT"; */
+"dz4-3s-ctT.title" = "Hiển thị tùy chọn gỡ lỗi";
+
+/* Class = "NSButtonCell"; title = "Enable All"; ObjectID = "fSV-R6-sjR"; */
+"fSV-R6-sjR.title" = "Bật tất cả";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
+"hz9-B4-Xy5.title" = "Dịch vụ";
+
+/* Class = "NSMenu"; title = "Pixel Perfect"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "Điểm ảnh hoàn hảo";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "Trợ giúp";
+
+/* Class = "NSTextFieldCell"; title = "Pixel Perfect"; ObjectID = "y80-Sh-8yF"; */
+"y80-Sh-8yF.title" = "Điểm ảnh hoàn hảo";
+
+"081-Zm-KOJ.title" = "Mẹo khắc phục sự cố";
+"7Sf-6F-PYP.title" = "Kiểm tra cập nhật...";
+"HGw-ca-BVt.title" = "Trang dự án";
+"Kn8-XW-HmN.title" = "Gửi phản hồi";
+"V3T-w1-ZzY.title" = "Kiểm tra cập nhật...";
+"orx-WS-NYi.title" = "Nhận trợ giúp từ cộng đồng";
+"taZ-O3-hGi.title" = "Cập nhật có sẵn";

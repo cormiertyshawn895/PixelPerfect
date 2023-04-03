@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LatestVersionNumber</key>
+	<string>1.0</string>
+	<key>LatestBuildNumber</key>
+	<integer>1</integer>
+	<key>LatestZIP</key>
+	<string>https://github.com/cormiertyshawn895/PixelPerfect/releases/download/1.0/PixelPerfect.1.0.zip</string>
+	<key>SupportPathURL</key>
+	<string>https://raw.githubusercontent.com/cormiertyshawn895/PixelPerfect/main/PixelPerfect/PixelPerfect/Support/SupportPath.plist</string>
+	<key>ReleasePage</key>
+	<string>https://github.com/cormiertyshawn895/PixelPerfect/releases</string>
+</dict>
+</plist>

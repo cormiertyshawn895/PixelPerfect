@@ -1,0 +1,3 @@
+"CFBundleName" = "Parfait Pixel";
+"CFBundleDisplayName" = "Parfait Pixel (clic droit pour ouvrir)";
+"NSAppleEventsUsageDescription" = "L'accès à Terminal est requis pour afficher les paramètres de débogage.";

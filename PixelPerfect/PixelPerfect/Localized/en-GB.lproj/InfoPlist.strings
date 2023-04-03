@@ -1,0 +1,3 @@
+"CFBundleName" = "Pixel Perfect";
+"CFBundleDisplayName" = "Pixel Perfect (right click to open)";
+"NSAppleEventsUsageDescription" = "Access to Terminal is required to show debug settings.";
