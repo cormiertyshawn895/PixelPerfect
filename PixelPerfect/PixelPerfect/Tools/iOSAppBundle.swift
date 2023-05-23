@@ -143,7 +143,7 @@ class iOSAppBundle: Bundle {
         
         let runningApps = NSRunningApplication.runningApplications(withBundleIdentifier: bundleIdentifier)
         for app in runningApps {
-            app.forceTerminate()
+            SystemHelper.killProcessID(app.processIdentifier)
             Timer.scheduledTimer(withTimeInterval: 0.1, repeats: false) { timer in
                 self.openApp()
             }

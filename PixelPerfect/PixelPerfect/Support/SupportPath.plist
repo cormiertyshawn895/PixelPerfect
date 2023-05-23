@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>LatestVersionNumber</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>LatestBuildNumber</key>
-	<integer>1</integer>
+	<integer>2</integer>
 	<key>LatestZIP</key>
 	<string>https://github.com/cormiertyshawn895/PixelPerfect/releases/download/1.0/PixelPerfect.1.0.zip</string>
 	<key>SupportPathURL</key>

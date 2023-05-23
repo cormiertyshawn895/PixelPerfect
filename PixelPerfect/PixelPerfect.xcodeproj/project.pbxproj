@@ -16,6 +16,7 @@
 		044A72B629D0E14D00933A0C /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A72B529D0E14D00933A0C /* BundleExtension.swift */; };
 		044A72B829D0E20400933A0C /* SupportPath.plist in Resources */ = {isa = PBXBuildFile; fileRef = 044A72B729D0E20400933A0C /* SupportPath.plist */; };
 		044A72C329D11E6100933A0C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 044A72C229D11E6100933A0C /* Credits.rtf */; };
+		04907C9B2A1C71C7003AC2BE /* SystemHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04907C9A2A1C71C7003AC2BE /* SystemHelper.m */; };
 		04ACE2E429CFADD5005C3648 /* ExceptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACE2E329CFADD5005C3648 /* ExceptionViewController.swift */; };
 		04ACE2E729CFADEB005C3648 /* AppExceptionTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACE2E529CFADEB005C3648 /* AppExceptionTableCellView.swift */; };
 		04ACE2EC29CFADF7005C3648 /* NSColor+RIUAlternatingColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ACE2EB29CFADF7005C3648 /* NSColor+RIUAlternatingColor.m */; };
@@ -154,6 +155,8 @@
 		044A72B729D0E20400933A0C /* SupportPath.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SupportPath.plist; sourceTree = "<group>"; };
 		044A72C229D11E6100933A0C /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		0460F83529CFD7B600092897 /* PixelPerfect-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PixelPerfect-Info.plist"; path = "PixelPerfect/Support/PixelPerfect-Info.plist"; sourceTree = SOURCE_ROOT; };
+		04907C992A1C71C7003AC2BE /* SystemHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemHelper.h; sourceTree = "<group>"; };
+		04907C9A2A1C71C7003AC2BE /* SystemHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemHelper.m; sourceTree = "<group>"; };
 		04ACE2E329CFADD5005C3648 /* ExceptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExceptionViewController.swift; sourceTree = "<group>"; };
 		04ACE2E529CFADEB005C3648 /* AppExceptionTableCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppExceptionTableCellView.swift; sourceTree = "<group>"; };
 		04ACE2E929CFADF6005C3648 /* PixelPerfect-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PixelPerfect-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -184,6 +187,8 @@
 			children = (
 				0448377A29CFBC1D005BD085 /* Constants.swift */,
 				0448377C29CFBC1D005BD085 /* iOSAppBundle.swift */,
+				04907C992A1C71C7003AC2BE /* SystemHelper.h */,
+				04907C9A2A1C71C7003AC2BE /* SystemHelper.m */,
 				044A72B329D0E0A800933A0C /* SystemInformation.swift */,
 			);
 			path = Tools;
@@ -382,6 +387,7 @@
 				0448375B29CFAE4B005BD085 /* StringExtension.swift in Sources */,
 				04ACE2E729CFADEB005C3648 /* AppExceptionTableCellView.swift in Sources */,
 				0448375D29CFB175005BD085 /* WindowController.swift in Sources */,
+				04907C9B2A1C71C7003AC2BE /* SystemHelper.m in Sources */,
 				044A72B429D0E0A800933A0C /* SystemInformation.swift in Sources */,
 				04ACE2EC29CFADF7005C3648 /* NSColor+RIUAlternatingColor.m in Sources */,
 				04B2265529CFAD100085F092 /* AppDelegate.swift in Sources */,
@@ -662,7 +668,7 @@
 				CODE_SIGN_ENTITLEMENTS = PixelPerfect/Support/PixelPerfect.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "PixelPerfect/Support/PixelPerfect-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
@@ -675,7 +681,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mac.PixelPerfect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -695,7 +701,7 @@
 				CODE_SIGN_ENTITLEMENTS = PixelPerfect/Support/PixelPerfect.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "PixelPerfect/Support/PixelPerfect-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
@@ -708,7 +714,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mac.PixelPerfect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

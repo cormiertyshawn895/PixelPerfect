@@ -3,103 +3,100 @@
 "1Xt-HY-uBw.title" = "Pixel Parfait";
 
 /* Class = "NSMenuItem"; title = "Enter Full Screen"; ObjectID = "4J7-dP-txa"; */
-"4J7-dP-txa.title" = "Koko näyttö";
+"4J7-dP-txa.title" = "Passer en plein écran";
 
 /* Class = "NSMenuItem"; title = "Quit Pixel Perfect"; ObjectID = "4sb-4s-VLi"; */
-"4sb-4s-VLi.title" = "Sulje Pixel Parfait";
+"4sb-4s-VLi.title" = "Quitter Pixel Parfait";
 
 /* Class = "NSMenuItem"; title = "About Pixel Perfect"; ObjectID = "5kV-Vb-QxS"; */
-"5kV-Vb-QxS.title" = "Tietoja Pixel Parfaitista";
+"5kV-Vb-QxS.title" = "À propos de Pixel Parfait";
 
 /* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
-"AYu-sK-qS6.title" = "Päävalikko";
+"AYu-sK-qS6.title" = "Menu principal";
 
 /* Class = "NSMenuItem"; title = "Close"; ObjectID = "DVo-aG-piG"; */
-"DVo-aG-piG.title" = "Sulje";
+"DVo-aG-piG.title" = "Fermer";
 
 /* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
-"F2S-fz-NVQ.title" = "Ohje";
+"F2S-fz-NVQ.title" = "Aide";
 
 /* Class = "NSMenuItem"; title = "Pixel Perfect Help"; ObjectID = "FKE-Sm-Kum"; */
-"FKE-Sm-Kum.title" = "Pixel Parfait -ohje";
+"FKE-Sm-Kum.title" = "Aide de Pixel Parfait";
 
 /* Class = "NSMenuItem"; title = "View"; ObjectID = "H8h-7b-M4v"; */
-"H8h-7b-M4v.title" = "Näkymä";
+"H8h-7b-M4v.title" = "Affichage";
 
 /* Class = "NSMenu"; title = "View"; ObjectID = "HyV-fh-RgO"; */
-"HyV-fh-RgO.title" = "Näkymä";
+"HyV-fh-RgO.title" = "Affichage";
 
 /* Class = "NSTextFieldCell"; title = "Enable iPhone and iPad apps to run at native resolution with pixel-perfect graphics and razor sharp text."; ObjectID = "IAR-Nf-69C"; */
-"IAR-Nf-69C.title" = "Mahdollista iPhone- ja iPad-sovellusten suorittaminen alkuperäisessä resoluutiossa pikselintarkalla grafiikalla ja terävällä tekstillä.";
+"IAR-Nf-69C.title" = "Permettre aux applications iPhone et iPad de s'exécuter avec une résolution native, des graphismes parfaits et un texte net.";
 
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "IQV-ah-pTq"; */
-"IQV-ah-pTq.title" = "Tekstisolu";
+"IQV-ah-pTq.title" = "Cellule de texte";
 
 /* Class = "NSWindow"; title = "Pixel Perfect"; ObjectID = "IQv-IB-iLA"; */
 "IQv-IB-iLA.title" = "Pixel Parfait";
 
 /* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
-"Kd2-mp-pUS.title" = "Näytä kaikki";
+"Kd2-mp-pUS.title" = "Tout afficher";
 
 /* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
-"LE2-aR-0XJ.title" = "Näytä kaikki edessä";
+"LE2-aR-0XJ.title" = "Mettre tout au premier plan";
 
 /* Class = "NSMenuItem"; title = "Reload"; ObjectID = "MES-zl-kn3"; */
-"MES-zl-kn3.title" = "Lataa uudelleen";
+"MES-zl-kn3.title" = "Recharger";
 
 /* Class = "NSButtonCell"; title = "Add App"; ObjectID = "NBe-PV-Qww"; */
-"NBe-PV-Qww.title" = "Lisää sovellus";
+"NBe-PV-Qww.title" = "Ajouter une application";
 
 /* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
-"NMo-om-nkz.title" = "Palvelut";
+"NMo-om-nkz.title" = "Services";
 
 /* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
-"OY7-WF-poV.title" = "Pienennä";
+"OY7-WF-poV.title" = "Réduire";
 
 /* Class = "NSMenuItem"; title = "Hide Pixel Perfect"; ObjectID = "Olw-nP-bQN"; */
-"Olw-nP-bQN.title" = "Piilota Pixel Parfait";
+"Olw-nP-bQN.title" = "Masquer Pixel Parfait";
 
 /* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
-"R4o-n2-Eq4.title" = "Zoomaa";
-
-/* Class = "NSTextFieldCell"; title = "Loading applications..."; ObjectID = "REV-t2-qWC"; */
-"REV-t2-qWC.title" = "Ladataan sovelluksia...";
+"R4o-n2-Eq4.title" = "Zoom";
 
 /* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
-"Td7-aD-5lo.title" = "Ikkuna";
+"Td7-aD-5lo.title" = "Fenêtre";
 
 /* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
-"Vdr-fp-XzO.title" = "Piilota muut";
+"Vdr-fp-XzO.title" = "Masquer les autres";
 
 /* Class = "NSTextFieldCell"; title = "App"; ObjectID = "Wxv-iP-hRi"; */
-"Wxv-iP-hRi.title" = "Sovellus";
+"Wxv-iP-hRi.title" = "Application";
 
 /* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
-"aUF-d1-5bR.title" = "Ikkuna";
+"aUF-d1-5bR.title" = "Fenêtre";
 
 /* Class = "NSMenu"; title = "File"; ObjectID = "bib-Uj-vzu"; */
-"bib-Uj-vzu.title" = "Tiedosto";
+"bib-Uj-vzu.title" = "Fichier";
 
 /* Class = "NSButtonCell"; title = "Reset All"; ObjectID = "cOf-V0-dtx"; */
-"cOf-V0-dtx.title" = "Palauta kaikki";
+"cOf-V0-dtx.title" = "Réinitialiser tout";
 
 /* Class = "NSMenuItem"; title = "File"; ObjectID = "dMs-cI-mzQ"; */
-"dMs-cI-mzQ.title" = "Tiedosto";
+"dMs-cI-mzQ.title" = "Fichier";
 
 /* Class = "NSMenuItem"; title = "Show Debug Options"; ObjectID = "dz4-3s-ctT"; */
-"dz4-3s-ctT.title" = "Näytä debug-asetukset";
+"dz4-3s-ctT.title" = "Afficher les options de débogage";
 
 /* Class = "NSButtonCell"; title = "Enable All"; ObjectID = "fSV-R6-sjR"; */
-"fSV-R6-sjR.title" = "Ota kaikki käyttöön";
+"fSV-R6-sjR.title" = "Activer tout";
 
 /* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
-"hz9-B4-Xy5.title" = "Palvelut";
+"hz9-B4-Xy5.title" = "Services";
 
 /* Class = "NSMenu"; title = "Pixel Perfect"; ObjectID = "uQy-DD-JDr"; */
 "uQy-DD-JDr.title" = "Pixel Parfait";
 
 /* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
-"wpr-3q-Mcd.title" = "Ohje";
+"wpr-3q-Mcd.title" = "Aide";
 
 /* Class = "NSTextFieldCell"; title = "Pixel Perfect"; ObjectID = "y80-Sh-8yF"; */
 "y80-Sh-8yF.title" = "Pixel Parfait";
