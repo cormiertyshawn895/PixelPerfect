@@ -1,6 +1,23 @@
 import AppKit
 import Foundation
 
+enum iOSAppIdiom {
+    case phone, pad, resizablePad, fullScreen
+    
+    var description: String {
+        switch self {
+        case .phone:
+            return "Designed for iPhone".localized
+        case .pad:
+            return "Designed for iPad".localized
+        case .resizablePad:
+            return "Designed for iPad (Resizable)".localized
+        case .fullScreen:
+            return "Designed for iPad (Full Screen)".localized
+        }
+    }
+}
+
 class iOSAppBundle: Bundle {
     override init?(path: String) {
         super.init(path: path)
@@ -38,11 +55,15 @@ class iOSAppBundle: Bundle {
     private var _cachedUserDefaults: UserDefaults?
     var userDefaults: UserDefaults? {
         if (_cachedUserDefaults == nil) {
-            if let preferenceDomain = preferenceDomain, let containerDefaults = UserDefaults(suiteName: preferenceDomain) {
-                _cachedUserDefaults = containerDefaults
-            }
+            forceReloadCachedUserDefaults()
         }
         return _cachedUserDefaults ?? UserDefaults(suiteName: self.bundleIdentifier)
+    }
+    
+    func forceReloadCachedUserDefaults() {
+        if let preferenceDomain = preferenceDomain, let containerDefaults = UserDefaults(suiteName: preferenceDomain) {
+            _cachedUserDefaults = containerDefaults
+        }
     }
     
     private var _cachedContainerPath: String?
@@ -54,6 +75,9 @@ class iOSAppBundle: Bundle {
         if (_cachedContainerPath != nil) {
             return
         }
+        forceReloadContainerPath()
+    }
+    func forceReloadContainerPath() {
         let manager = FileManager.default
         let containersRootPath = (containersPathWithTilde as NSString).expandingTildeInPath
         do {
@@ -133,10 +157,49 @@ class iOSAppBundle: Bundle {
         return false
     }
     
+    var isInstalledThroughPixelPerfect: Bool {
+        return FileManager.default.fileExists(atPath: self.bundlePath.appendingPathComponent("Wrapper/\(pixelPerfectMetadataPlistName)"))
+    }
+    
+    var infoPlistURL: URL? {
+        return self.url(forResource: "Info", withExtension: "plist")
+    }
+    
+    var infoPlistPath: String? {
+        return self.path(forResource: "Info", ofType: "plist")
+    }
+    
+    var idiom: iOSAppIdiom {
+        guard let infoDict = self.infoDictionary else {
+            return .phone
+        }
+        let supportsTrueScreenSize: Bool = (infoDict[kUISupportsTrueScreenSizeOnMac] as? Bool) ?? false
+        let launchToFullScreenByDefault: Bool = (infoDict[kUILaunchToFullScreenByDefaultOnMac] as? Bool) ?? false
+        let hasAllOrientations = (infoDict[kUISupportedInterfaceOrientations] as? Array)?.sorted() == kAllSupportedOrientations.sorted() || (infoDict[kUISupportedInterfaceOrientationsiPad] as? Array)?.sorted() == kAllSupportedOrientations.sorted()
+        var requiresFullScreen = ((infoDict[kUIRequiresFullScreen] as? Bool) ?? false)
+        if let requiresFullScreeniPad = infoDict[kUIRequiresFullScreeniPad] as? Bool {
+            requiresFullScreen = requiresFullScreeniPad
+        }
+        let isResizable = hasAllOrientations && !requiresFullScreen
+        var isPadIdiom = false
+        if let deviceFamily = infoDict[kUIDeviceFamily] as? [Int] {
+            if (deviceFamily.contains(6) || deviceFamily.contains(2)) {
+                isPadIdiom = true
+            }
+        }
+        if (supportsTrueScreenSize && launchToFullScreenByDefault && isPadIdiom && !isResizable) {
+            return .fullScreen
+        }
+        if (isPadIdiom) {
+            return isResizable ? .resizablePad : .pad
+        }
+        return .phone
+    }
+    
     var unindexed: Bool = false
     
     // MARK: - Actions
-    func quitAndRelaunch() {
+    func quitAndRelaunch(_ relaunch: Bool = true) {
         guard let bundleIdentifier = bundleIdentifier else {
             return
         }
@@ -144,8 +207,10 @@ class iOSAppBundle: Bundle {
         let runningApps = NSRunningApplication.runningApplications(withBundleIdentifier: bundleIdentifier)
         for app in runningApps {
             SystemHelper.killProcessID(app.processIdentifier)
-            Timer.scheduledTimer(withTimeInterval: 0.1, repeats: false) { timer in
-                self.openApp()
+            if (relaunch) {
+                Timer.scheduledTimer(withTimeInterval: 0.1, repeats: false) { timer in
+                    self.openApp()
+                }
             }
         }
     }

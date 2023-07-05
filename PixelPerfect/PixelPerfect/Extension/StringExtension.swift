@@ -2,9 +2,26 @@ import Foundation
 
 extension String {
     var isiOSAppBundlePath: Bool {
-        return self.contains(wrapperTranslocatedPattern)
-        || FileManager.default.fileExists(atPath: "\(self)/\(wrappedBundleComponentName)")
+        if self.contains(".Trash") {
+            return false
+        }
+        let maybeValid = self.contains(wrapperTranslocatedPattern)
         || self.contains(playcoverPathComponents)
+        || FileManager.default.fileExists(atPath: self.appendingPathComponent(wrappedBundleComponentName))
+        if (!maybeValid) {
+            return false
+        }
+        let isSIPEnabled = SystemInformation.shared.isSIPEnabled
+        if (isSIPEnabled) {
+            if (!FileManager.default.fileExists(atPath: self.appendingPathComponent("Wrapper/\(bundleMetadataPlistName)"))
+                || FileManager.default.fileExists(atPath: self.appendingPathComponent("Wrapper/\(pixelPerfectMetadataPlistName)"))) {
+                return false
+            }
+        }
+        if (!isSIPEnabled && FileManager.default.fileExists(atPath: self.appendingPathComponent("Wrapper/iTunesMetadata.plist"))) {
+            return false
+        }
+        return true
     }
     
     func appendingPathComponent(_ str: String) -> String {

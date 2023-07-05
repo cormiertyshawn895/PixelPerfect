@@ -77,6 +77,9 @@
 /* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
 "Td7-aD-5lo.title" = "Window";
 
+/* Class = "NSMenuItem"; title = "Choose App…"; ObjectID = "V1K-p2-PUC"; */
+"V1K-p2-PUC.title" = "Choose App…";
+
 /* Class = "NSMenuItem"; title = "Check for Updates..."; ObjectID = "V3T-w1-ZzY"; */
 "V3T-w1-ZzY.title" = "Check for Updates...";
 
@@ -106,6 +109,12 @@
 
 /* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
 "hz9-B4-Xy5.title" = "Services";
+
+/* Class = "NSMenuItem"; title = "Install Decrypted IPA…"; ObjectID = "jDU-oL-AIt"; */
+"jDU-oL-AIt.title" = "Install Decrypted IPA…";
+
+/* Class = "NSMenuItem"; title = "Download Decrypted IPA…"; ObjectID = "n3r-Fn-xnx"; */
+"n3r-Fn-xnx.title" = "Download Decrypted IPA…";
 
 /* Class = "NSMenuItem"; title = "Get Help from Community"; ObjectID = "orx-WS-NYi"; */
 "orx-WS-NYi.title" = "Get Help from Community";
