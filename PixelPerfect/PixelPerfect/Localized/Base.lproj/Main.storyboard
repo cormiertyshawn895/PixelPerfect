@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21701"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors introduced in macOS 10.14" minToolsVersion="10.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -65,6 +67,23 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="File" id="bib-Uj-vzu">
                                     <items>
+                                        <menuItem title="Choose App…" keyEquivalent="o" id="V1K-p2-PUC">
+                                            <connections>
+                                                <action selector="chooseAppClicked:" target="Voe-Tx-rLC" id="G7V-hv-cqC"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="ckT-Hp-zyG"/>
+                                        <menuItem title="Install Decrypted IPA…" keyEquivalent="i" id="jDU-oL-AIt">
+                                            <connections>
+                                                <action selector="installDecryptedIPAClicked:" target="Voe-Tx-rLC" id="A1d-f1-W9P"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Download Decrypted IPA…" keyEquivalent="d" id="n3r-Fn-xnx">
+                                            <connections>
+                                                <action selector="downloadDecryptedIPAClicked:" target="Voe-Tx-rLC" id="zri-wP-cdH"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="pSW-ZF-HcJ"/>
                                         <menuItem title="Close" keyEquivalent="w" id="DVo-aG-piG">
                                             <connections>
                                                 <action selector="performClose:" target="Ady-hI-5gd" id="HmO-Ls-i7Q"/>
@@ -175,6 +194,10 @@
                 </application>
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Pixel_Perfect" customModuleProvider="target">
                     <connections>
+                        <outlet property="downloadIPAMenuItem" destination="n3r-Fn-xnx" id="DfG-bU-i6Y"/>
+                        <outlet property="fileMenu" destination="bib-Uj-vzu" id="rjd-MX-o5X"/>
+                        <outlet property="installIPAMenuItem" destination="jDU-oL-AIt" id="0d9-86-Z6B"/>
+                        <outlet property="separatorAboveInstallIPA" destination="ckT-Hp-zyG" id="oPO-Ex-KBh"/>
                         <outlet property="showDebugOptionsMenuItem" destination="dz4-3s-ctT" id="XKc-AQ-t5T"/>
                     </connections>
                 </customObject>
@@ -210,14 +233,14 @@
             <objects>
                 <viewController storyboardIdentifier="ExceptionViewController" id="O4d-da-WSB" customClass="ExceptionViewController" customModule="Pixel_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="t5I-sr-Y9J">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="688"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="689"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <visualEffectView blendingMode="behindWindow" material="underWindowBackground" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="cxh-a2-Xky">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="688"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="689"/>
                                 <subviews>
                                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="hu7-Yf-HtG">
-                                        <rect key="frame" x="18" y="633" width="284" height="17"/>
+                                        <rect key="frame" x="18" y="634" width="284" height="17"/>
                                         <textFieldCell key="cell" title="Pixel Perfect" id="y80-Sh-8yF">
                                             <font key="font" metaFont="systemBold" size="14"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -225,7 +248,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="ZLp-ls-7Qe">
-                                        <rect key="frame" x="18" y="577" width="284" height="48"/>
+                                        <rect key="frame" x="18" y="578" width="284" height="48"/>
                                         <textFieldCell key="cell" title="Enable iPhone and iPad apps to run at native resolution with pixel-perfect graphics and razor sharp text." id="IAR-Nf-69C">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -233,13 +256,13 @@
                                         </textFieldCell>
                                     </textField>
                                     <box boxType="custom" cornerRadius="6" translatesAutoresizingMaskIntoConstraints="NO" id="6cp-Rj-thO">
-                                        <rect key="frame" x="20" y="68" width="280" height="497"/>
+                                        <rect key="frame" x="20" y="68" width="280" height="498"/>
                                         <view key="contentView" id="HgK-Ph-XPv">
-                                            <rect key="frame" x="1" y="1" width="278" height="495"/>
+                                            <rect key="frame" x="1" y="1" width="278" height="496"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="48" horizontalPageScroll="10" verticalLineScroll="48" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixY-1b-nvB">
-                                                    <rect key="frame" x="0.0" y="30" width="278" height="465"/>
+                                                    <rect key="frame" x="0.0" y="31" width="278" height="465"/>
                                                     <clipView key="contentView" drawsBackground="NO" id="C6A-6G-SfV">
                                                         <rect key="frame" x="0.0" y="0.0" width="278" height="465"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -368,14 +391,20 @@
                                                         <progressIndicator wantsLayer="YES" maxValue="100" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="8Ch-tZ-U58">
                                                             <rect key="frame" x="17" y="102" width="16" height="16"/>
                                                         </progressIndicator>
-                                                        <imageView wantsLayer="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="as0-ty-AjA">
+                                                        <button translatesAutoresizingMaskIntoConstraints="NO" id="Jn8-5b-CoJ">
                                                             <rect key="frame" x="3" y="54" width="44" height="44"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="44" id="okG-BI-XHc"/>
-                                                                <constraint firstAttribute="width" constant="44" id="vFf-P6-sSD"/>
+                                                                <constraint firstAttribute="width" secondItem="Jn8-5b-CoJ" secondAttribute="height" id="JRF-8W-fz1"/>
+                                                                <constraint firstAttribute="height" constant="44" id="c6h-HQ-Bjo"/>
                                                             </constraints>
-                                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="iphone.and.ipad.fallback" id="cff-pZ-uvK"/>
-                                                        </imageView>
+                                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="iphone.and.ipad.fallback" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="YSP-TB-MvK">
+                                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                <font key="font" metaFont="system"/>
+                                                            </buttonCell>
+                                                            <connections>
+                                                                <action selector="loadingButtonClicked:" target="O4d-da-WSB" id="yRe-zx-otO"/>
+                                                            </connections>
+                                                        </button>
                                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gZm-cc-T9e">
                                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                             <buttonCell key="cell" type="bevel" bezelStyle="rounded" alignment="center" lineBreakMode="charWrapping" enabled="NO" imageScaling="proportionallyDown" inset="2" id="NOu-tb-aIl">
@@ -407,7 +436,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="ixY-1b-nvB" secondAttribute="trailing" id="DOF-l7-tFH"/>
                                                 <constraint firstItem="sJJ-AJ-OTv" firstAttribute="centerX" secondItem="HgK-Ph-XPv" secondAttribute="centerX" id="H65-9Q-E1j"/>
                                                 <constraint firstItem="6sy-EB-wE2" firstAttribute="leading" secondItem="HgK-Ph-XPv" secondAttribute="leading" id="NSd-NE-Xq0"/>
-                                                <constraint firstAttribute="bottom" secondItem="ixY-1b-nvB" secondAttribute="bottom" constant="30" id="TCK-RC-SFL"/>
+                                                <constraint firstAttribute="bottom" secondItem="ixY-1b-nvB" secondAttribute="bottom" constant="31" id="TCK-RC-SFL"/>
                                                 <constraint firstAttribute="trailing" secondItem="6sy-EB-wE2" secondAttribute="trailing" id="deU-DW-d8q"/>
                                                 <constraint firstItem="BVC-1O-smk" firstAttribute="leading" secondItem="HgK-Ph-XPv" secondAttribute="leading" id="k7C-wK-a7M"/>
                                                 <constraint firstItem="ixY-1b-nvB" firstAttribute="leading" secondItem="HgK-Ph-XPv" secondAttribute="leading" id="lBx-wJ-6RV"/>
@@ -454,7 +483,7 @@ DQ
                                         </customSpacing>
                                     </stackView>
                                     <button hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PHq-8a-L55">
-                                        <rect key="frame" x="210" y="662" width="102" height="18"/>
+                                        <rect key="frame" x="210" y="663" width="102" height="18"/>
                                         <buttonCell key="cell" type="inline" title="Update Available" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="taZ-O3-hGi">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="smallSystemBold"/>
@@ -471,6 +500,7 @@ DQ
                                     <constraint firstAttribute="trailing" secondItem="ZLp-ls-7Qe" secondAttribute="trailing" constant="20" symbolic="YES" id="AUg-cd-Ced"/>
                                     <constraint firstItem="reT-Eb-ke5" firstAttribute="top" secondItem="6cp-Rj-thO" secondAttribute="bottom" constant="20" symbolic="YES" id="IeY-Rj-Ld7"/>
                                     <constraint firstItem="reT-Eb-ke5" firstAttribute="leading" secondItem="cxh-a2-Xky" secondAttribute="leading" constant="20" symbolic="YES" id="RUW-lS-GE5"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="ShS-vg-WEn"/>
                                     <constraint firstItem="hu7-Yf-HtG" firstAttribute="leading" secondItem="cxh-a2-Xky" secondAttribute="leading" constant="20" symbolic="YES" id="TuP-ue-JW4"/>
                                     <constraint firstItem="6cp-Rj-thO" firstAttribute="leading" secondItem="cxh-a2-Xky" secondAttribute="leading" constant="20" symbolic="YES" id="VKK-cY-UJo"/>
                                     <constraint firstAttribute="trailing" secondItem="reT-Eb-ke5" secondAttribute="trailing" constant="20" symbolic="YES" id="Z0i-N6-q30"/>
@@ -494,11 +524,16 @@ DQ
                     <connections>
                         <outlet property="actionContainerView" destination="6sy-EB-wE2" id="5dK-qN-fAQ"/>
                         <outlet property="addButton" destination="WG0-du-6Ef" id="K48-yL-spE"/>
-                        <outlet property="getAppsImageView" destination="as0-ty-AjA" id="qqj-Eq-jdT"/>
+                        <outlet property="bottomStackView" destination="reT-Eb-ke5" id="wOW-eD-KQe"/>
+                        <outlet property="enableButton" destination="pnc-mZ-evR" id="GBi-H4-2Nd"/>
+                        <outlet property="explanationLabel" destination="ZLp-ls-7Qe" id="JXD-yt-BHG"/>
+                        <outlet property="getAppsImageButton" destination="Jn8-5b-CoJ" id="mxm-bD-fr0"/>
+                        <outlet property="getAppsImageButtonHeightConstraint" destination="c6h-HQ-Bjo" id="wAg-cy-duc"/>
                         <outlet property="horizontalLineView" destination="BVC-1O-smk" id="xyp-NA-q40"/>
                         <outlet property="loadingButton" destination="gZm-cc-T9e" id="xo9-ec-Bbj"/>
                         <outlet property="loadingStackView" destination="sJJ-AJ-OTv" id="9SL-2f-2DR"/>
                         <outlet property="progressIndicator" destination="8Ch-tZ-U58" id="lNY-jb-aYE"/>
+                        <outlet property="resetButton" destination="J4k-fL-2JL" id="hrA-Vw-8jB"/>
                         <outlet property="roundedBoxView" destination="6cp-Rj-thO" id="dkv-Zr-zkh"/>
                         <outlet property="scrollView" destination="ixY-1b-nvB" id="rtJ-iM-ZpV"/>
                         <outlet property="tableView" destination="CTv-PX-vuI" id="1v6-QF-bvQ"/>
@@ -509,11 +544,178 @@ DQ
             </objects>
             <point key="canvasLocation" x="75" y="1486"/>
         </scene>
+        <!--Installation View Controller-->
+        <scene sceneID="hqd-gC-bGW">
+            <objects>
+                <viewController storyboardIdentifier="InstallationViewController" id="n19-Qz-Uaq" customClass="InstallationViewController" customModule="Pixel_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="7XY-95-AEA">
+                        <rect key="frame" x="0.0" y="0.0" width="371" height="58"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Aer-5C-WyN">
+                                <rect key="frame" x="3" y="5" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="Rix-mG-lTT"/>
+                                    <constraint firstAttribute="height" constant="48" id="i23-d6-2VI"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSApplicationIcon" id="n9L-88-Mni"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="6F8-ax-W8l">
+                                <rect key="frame" x="53" y="29" width="304" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="LFA-Bx-KMn"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="truncatingMiddle" usesSingleLineMode="YES" id="Dg0-fk-gvR">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <progressIndicator maxValue="100" indeterminate="YES" controlSize="small" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="XYb-Rf-QWX">
+                                <rect key="frame" x="55" y="15" width="300" height="12"/>
+                            </progressIndicator>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="XYb-Rf-QWX" firstAttribute="top" secondItem="6F8-ax-W8l" secondAttribute="bottom" constant="2" id="0iq-CK-9kg"/>
+                            <constraint firstAttribute="trailing" secondItem="XYb-Rf-QWX" secondAttribute="trailing" constant="16" id="2mE-wQ-mXf"/>
+                            <constraint firstItem="XYb-Rf-QWX" firstAttribute="leading" secondItem="Aer-5C-WyN" secondAttribute="trailing" constant="4" id="DoX-79-7Zk"/>
+                            <constraint firstAttribute="bottom" secondItem="Aer-5C-WyN" secondAttribute="bottom" constant="5" id="Fot-5Q-1Fq"/>
+                            <constraint firstItem="Aer-5C-WyN" firstAttribute="leading" secondItem="7XY-95-AEA" secondAttribute="leading" constant="3" id="PNf-SS-U6e"/>
+                            <constraint firstItem="6F8-ax-W8l" firstAttribute="top" secondItem="7XY-95-AEA" secondAttribute="top" constant="15" id="dFr-Dy-VO7"/>
+                            <constraint firstItem="6F8-ax-W8l" firstAttribute="leading" secondItem="Aer-5C-WyN" secondAttribute="trailing" constant="4" id="mJo-mo-yvk"/>
+                            <constraint firstAttribute="trailing" secondItem="6F8-ax-W8l" secondAttribute="trailing" constant="16" id="qtO-x9-mZD"/>
+                            <constraint firstItem="Aer-5C-WyN" firstAttribute="top" secondItem="7XY-95-AEA" secondAttribute="top" constant="5" id="rrt-gd-lsV"/>
+                            <constraint firstItem="6F8-ax-W8l" firstAttribute="leading" secondItem="Aer-5C-WyN" secondAttribute="trailing" constant="4" id="w17-iW-Umm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="iconView" destination="Aer-5C-WyN" id="OVe-iY-Dme"/>
+                        <outlet property="installationLabel" destination="6F8-ax-W8l" id="nvK-ET-AdZ"/>
+                        <outlet property="progressIndicator" destination="XYb-Rf-QWX" id="FNy-C4-fN7"/>
+                    </connections>
+                </viewController>
+                <customObject id="8Wp-yL-tkz" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="1167"/>
+        </scene>
+        <!--Sheet View Controller-->
+        <scene sceneID="exv-UT-SZd">
+            <objects>
+                <viewController storyboardIdentifier="SheetViewController" id="hrm-DL-FOH" customClass="SheetViewController" customModule="Pixel_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="rOL-jf-qqu">
+                        <rect key="frame" x="0.0" y="0.0" width="298" height="337"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hMf-ed-zR8">
+                                <rect key="frame" x="264" y="293" width="24" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="7Ts-Kf-aPm"/>
+                                    <constraint firstAttribute="width" constant="24" id="Ge0-ng-4wF"/>
+                                </constraints>
+                                <buttonCell key="cell" type="bevel" bezelStyle="rounded" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="uaq-k8-5as">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <imageReference key="image" image="xmark.circle.fill" catalog="system" symbolScale="large"/>
+                                </buttonCell>
+                                <color key="contentTintColor" red="0.74901968240000005" green="0.74901968240000005" blue="0.74901968240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="closeButtonClicked:" target="hrm-DL-FOH" id="euz-TS-6xs"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="HgW-Oa-vun">
+                                <rect key="frame" x="18" y="290" width="242" height="17"/>
+                                <textFieldCell key="cell" id="BnG-N7-N8X">
+                                    <font key="font" metaFont="systemBold" size="14"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="a1y-07-PEK">
+                                <rect key="frame" x="20" y="272" width="258" height="5"/>
+                            </box>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="dhl-dJ-8LD">
+                                <rect key="frame" x="18" y="243" width="262" height="16"/>
+                                <textFieldCell key="cell" id="fy3-hi-C9X">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="J9H-MB-P8e">
+                                <rect key="frame" x="20" y="25" width="258" height="0.0"/>
+                                <buttonCell key="cell" type="bevel" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="hp5-ni-v2e">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="contentTintColor" name="controlAccentColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <action selector="viewInstructionsClicked:" target="hrm-DL-FOH" id="kUw-rh-aJF"/>
+                                </connections>
+                            </button>
+                            <box titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="4nY-6k-pWx">
+                                <rect key="frame" x="62" y="46" width="174" height="174"/>
+                                <view key="contentView" id="1yN-Gi-qMk">
+                                    <rect key="frame" x="4" y="5" width="166" height="166"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Av3-zA-SD2">
+                                            <rect key="frame" x="14" y="12" width="140" height="140"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="hVP-YN-vet"/>
+                                            <color key="contentTintColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        </imageView>
+                                        <progressIndicator fixedFrame="YES" maxValue="100" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="yTO-wd-5TW">
+                                            <rect key="frame" x="76" y="74" width="16" height="16"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        </progressIndicator>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="168" id="8XW-fN-fve"/>
+                                    <constraint firstAttribute="width" constant="168" id="tcC-Tf-kyp"/>
+                                </constraints>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HgW-Oa-vun" secondAttribute="trailing" constant="40" id="2lM-QC-OZg"/>
+                            <constraint firstItem="a1y-07-PEK" firstAttribute="leading" secondItem="rOL-jf-qqu" secondAttribute="leading" constant="20" id="6wu-wx-be9"/>
+                            <constraint firstItem="HgW-Oa-vun" firstAttribute="leading" secondItem="rOL-jf-qqu" secondAttribute="leading" constant="20" symbolic="YES" id="7iG-sT-Dxf"/>
+                            <constraint firstAttribute="trailing" secondItem="a1y-07-PEK" secondAttribute="trailing" constant="20" id="Gf9-Ct-Mq4"/>
+                            <constraint firstItem="J9H-MB-P8e" firstAttribute="leading" secondItem="rOL-jf-qqu" secondAttribute="leading" constant="20" symbolic="YES" id="IVQ-KZ-7zQ"/>
+                            <constraint firstItem="hMf-ed-zR8" firstAttribute="top" secondItem="rOL-jf-qqu" secondAttribute="top" constant="12" id="L3x-ng-xIj"/>
+                            <constraint firstItem="a1y-07-PEK" firstAttribute="top" secondItem="HgW-Oa-vun" secondAttribute="bottom" constant="15" id="QLs-jP-YxW"/>
+                            <constraint firstItem="4nY-6k-pWx" firstAttribute="top" secondItem="dhl-dJ-8LD" secondAttribute="bottom" constant="25" id="RIL-Et-Tz5"/>
+                            <constraint firstItem="4nY-6k-pWx" firstAttribute="centerX" secondItem="rOL-jf-qqu" secondAttribute="centerX" id="WD3-Zi-oIf"/>
+                            <constraint firstItem="HgW-Oa-vun" firstAttribute="top" secondItem="rOL-jf-qqu" secondAttribute="top" constant="30" id="cqf-jL-rz2"/>
+                            <constraint firstItem="dhl-dJ-8LD" firstAttribute="leading" secondItem="rOL-jf-qqu" secondAttribute="leading" constant="20" symbolic="YES" id="dCE-95-s6G"/>
+                            <constraint firstItem="dhl-dJ-8LD" firstAttribute="top" secondItem="a1y-07-PEK" secondAttribute="bottom" constant="15" id="dqv-Or-328"/>
+                            <constraint firstAttribute="bottom" secondItem="J9H-MB-P8e" secondAttribute="bottom" constant="25" id="gqC-ks-vcp"/>
+                            <constraint firstAttribute="trailing" secondItem="dhl-dJ-8LD" secondAttribute="trailing" constant="20" symbolic="YES" id="jPD-ej-EPi"/>
+                            <constraint firstAttribute="trailing" secondItem="hMf-ed-zR8" secondAttribute="trailing" constant="10" id="kXC-vl-bFu"/>
+                            <constraint firstItem="J9H-MB-P8e" firstAttribute="top" secondItem="4nY-6k-pWx" secondAttribute="bottom" constant="25" id="uUr-6W-VwM"/>
+                            <constraint firstAttribute="trailing" secondItem="J9H-MB-P8e" secondAttribute="trailing" constant="20" symbolic="YES" id="w1V-2R-hME"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="captionLabel" destination="dhl-dJ-8LD" id="cn7-N0-T4R"/>
+                        <outlet property="closeButton" destination="hMf-ed-zR8" id="qkE-3M-LpT"/>
+                        <outlet property="progressIndicator" destination="yTO-wd-5TW" id="8MP-32-m9t"/>
+                        <outlet property="qrCodeImageView" destination="Av3-zA-SD2" id="Qtt-ox-V7g"/>
+                        <outlet property="titleLabel" destination="HgW-Oa-vun" id="rSS-fg-9kA"/>
+                        <outlet property="viewInstructionsButton" destination="J9H-MB-P8e" id="kDw-Ai-iQw"/>
+                    </connections>
+                </viewController>
+                <customObject id="ucD-xL-ikA" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="1367.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="GenericAppIcon" width="64" height="64"/>
+        <image name="NSApplicationIcon" width="32" height="32"/>
         <image name="iphone.and.ipad.fallback" width="110" height="88"/>
         <image name="plus" catalog="system" width="14" height="13"/>
+        <image name="xmark.circle.fill" catalog="system" width="20" height="20"/>
         <namedColor name="BoxBorderColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="0.11999999731779099" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

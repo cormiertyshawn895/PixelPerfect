@@ -62,6 +62,9 @@
 /* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
 "R4o-n2-Eq4.title" = "Zoom";
 
+/* Class = "NSTextFieldCell"; title = "Loading applications..."; ObjectID = "REV-t2-qWC"; */
+"REV-t2-qWC.title" = "Chargement des applications...";
+
 /* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
 "Td7-aD-5lo.title" = "Fenêtre";
 
@@ -108,3 +111,6 @@
 "V3T-w1-ZzY.title" = "Vérifier les mises à jour...";
 "orx-WS-NYi.title" = "Obtenir de l'aide de la communauté";
 "taZ-O3-hGi.title" = "Mise à jour disponible";
+"V1K-p2-PUC.title" = "Choisir l'application...";
+"jDU-oL-AIt.title" = "Installer IPA décryptée...";
+"n3r-Fn-xnx.title" = "Télécharger l'IPA déchiffrée…";

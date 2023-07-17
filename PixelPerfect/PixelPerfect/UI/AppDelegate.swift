@@ -3,6 +3,10 @@ import Cocoa
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var showDebugOptionsMenuItem: NSMenuItem!
+    @IBOutlet weak var separatorAboveInstallIPA: NSMenuItem!
+    @IBOutlet weak var installIPAMenuItem: NSMenuItem!
+    @IBOutlet weak var downloadIPAMenuItem: NSMenuItem!
+    @IBOutlet weak var fileMenu: NSMenu!
     
     // MARK: - Static Helper Variables
     static var current: AppDelegate {
@@ -41,6 +45,23 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let _ = SystemInformation.shared
         NSApp.activate(ignoringOtherApps: true)
         updateShowDebugOptions()
+        if (!SystemInformation.shared.isAppleSilicon) {
+            fileMenu.removeItem(separatorAboveInstallIPA)
+            fileMenu.removeItem(installIPAMenuItem)
+            fileMenu.removeItem(downloadIPAMenuItem)
+        }
+        SystemInformation.shared.fixTCCPrompts()
+    }
+    
+    func application(_ sender: NSApplication, openFiles filenames: [String]) {
+        print("Opening \(filenames)")
+        guard let rootVC = AppDelegate.rootVC else {
+            print("No root VC, skipping")
+            return
+        }
+        if rootVC.canInstallDecryptedIPA() {
+            rootVC.installIPAFromPaths(paths: filenames, checkIfCanInstall: true)
+        }
     }
     
     func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
@@ -56,6 +77,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     // MARK: - IBActions
+    @IBAction func chooseAppClicked(_ sender: Any) {
+        AppDelegate.rootVC?.chooseAppToAdd(self)
+    }
+    
+    @IBAction func installDecryptedIPAClicked(_ sender: Any) {
+        AppDelegate.rootVC?.chooseDecryptedIPA(self)
+    }
+    
+    @IBAction func downloadDecryptedIPAClicked(_ sender: Any) {
+        AppDelegate.rootVC?.downloadDecryptedIPA(self)
+    }
+    
     @IBAction func reloadClicked(_ sender: Any) {
         AppDelegate.rootVC?.searchForApps()
     }

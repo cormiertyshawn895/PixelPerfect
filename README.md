@@ -1,19 +1,21 @@
-<a href="https://github.com/cormiertyshawn895/PixelPerfect/releases/download/1.1/PixelPerfect.1.1.zip" alt="Download Pixel Perfect"><img src="PixelPerfect/Screenshots/icon.png" width="150" alt="Pixel Perfect App icon" align="left"/></a>
+<a href="https://github.com/cormiertyshawn895/PixelPerfect/releases/download/1.2/PixelPerfect.1.2.zip" alt="Download Pixel Perfect"><img src="PixelPerfect/Screenshots/icon.png" width="150" alt="Pixel Perfect App icon" align="left"/></a>
 
 <div>
 <h2>Pixel Perfect</h2>
-<p>Pixel Perfect lets you increase the text size of iPhone and iPad apps on Mac. Say goodbye to small and blurry text, and enjoy pixel-perfect graphics, all rendered at 100% native resolution. Compatible with <a href="https://apps.apple.com/app/macos-ventura/id1638787999">macOS Ventura</a>, <a href="https://apps.apple.com/app/macos-monterey/id1576738294">macOS Monterey</a>, and <a href="https://apps.apple.com/app/macos-big-sur/id1526878132">macOS Big Sur</a>.</p>
+<p>Pixel Perfect lets you increase the text size of iPhone and iPad apps on Mac. Say goodbye to small and blurry text, and enjoy pixel-perfect graphics, all rendered at 100% native resolution. Compatible with <a href="https://www.apple.com/macos/sonoma-preview/">macOS Sonoma</a>, <a href="https://apps.apple.com/app/macos-ventura/id1638787999">macOS Ventura</a>, <a href="https://apps.apple.com/app/macos-monterey/id1576738294">macOS Monterey</a>, and <a href="https://apps.apple.com/app/macos-big-sur/id1526878132">macOS Big Sur</a>.</p>
 </div>
 
 
 <p align="center">
-  <a href="https://github.com/cormiertyshawn895/PixelPerfect/releases/download/1.1/PixelPerfect.1.1.zip" alt="Download Pixel Perfect"><img width="240" src="PixelPerfect/Screenshots/resources/download-button.png" alt="Download Pixel Perfect"></a>
+  <a href="https://github.com/cormiertyshawn895/PixelPerfect/releases/download/1.2/PixelPerfect.1.2.zip" alt="Download Pixel Perfect"><img width="240" src="PixelPerfect/Screenshots/resources/download-button.png" alt="Download Pixel Perfect"></a>
 <p>
 <p align="center">
   <a href="https://github.com/cormiertyshawn895/PixelPerfect/releases" alt="View Release Page"><img width="160" src="PixelPerfect/Screenshots/resources/release-button.png" alt="View Release Page"></a>
 </p>
 
 ![](PixelPerfect/Screenshots/screenshot-animation.gif)
+
+Since its inception, Pixel Perfect has been featured by [AAPL Ch.](https://applech2.com/archives/20230508-pixelperfect-iphone-and-ipad-apps-on-mac.html), [appgefahren.de](https://www.appgefahren.de/pixel-perfect-mac-app-optimiert-mobile-anwendungen-334908.html), [AppStories](https://appstories.net/episodes/326), [Christopher Lawley](https://www.youtube.com/watch?v=phNcKFkTG9s), [Club MacStories](https://club.macstories.net/posts/monthly-log-april-2023), [FLIP.de](https://flip.de/pixel-perfect-mac/), [Mac & i](https://www.heise.de/news/Bessere-Lesbarkeit-Tool-vergroessert-iPhone-und-iPad-Apps-auf-dem-Mac-8516352.html), and [ifun.de](https://www.ifun.de/pixel-perfect-fuer-iphone-und-ipad-apps-auf-dem-mac-207292).
 
 ---
 
@@ -32,6 +34,10 @@ Pixel Perfect will not harm your Mac. This alert shows up because Pixel Perfect 
 ---
 
 ### Using Pixel Perfect
+
+On macOS Sonoma and later, Pixel Perfect will ask you to enable Full Disk Access. This is required for utilities such as Pixel Perfect to access and change the settings of other apps.
+
+![](PixelPerfect/Screenshots/screenshot-full-disk-access.jpg)
 
 By default, iPhone and iPad apps run at 77% scaling on your Mac. In some apps, this may result in small and blurry text. To improve legibility, click the toggle to run your favorite app at native resolution.
 
@@ -57,11 +63,13 @@ Yes, Pixel Perfect is fully compatible with Mac computers with Apple Silicon.
 
 #### Can I use Pixel Perfect with iPhone and iPad apps downloaded from the Mac App Store?
 
-Yes, you can use Pixel Perfect with iPhone and iPad apps downloaded from the Mac App Store. You can find  iPhone and iPad apps by looking for “Designed for iPad” and “Designed for iPhone” in Mac App Store listings.
+Yes, you can use Pixel Perfect with iPhone and iPad apps downloaded from the Mac App Store. You can find iPhone and iPad apps by looking for “Designed for iPad” and “Designed for iPhone” in Mac App Store listings.
 
-#### Can I use Pixel Perfect with iPhone and iPad apps downloaded from PlayCover or Sideloadly?
+#### Can I use Pixel Perfect with iPhone and iPad apps downloaded from third party websites, PlayCover, or Sideloadly?
 
-Yes, you can also use Pixel Perfect with iPhone and iPad apps downloaded from third party sources, such as [PlayCover](https://playcover.io) and [Sideloadly](https://sideloadly.io).
+Yes, you can use Pixel Perfect with iPhone and iPad apps downloaded from third party websites or installed through utilities such as [PlayCover](https://playcover.io) and [Sideloadly](https://sideloadly.io). For apps incompatible with [PlayCover](https://playcover.io) and [Sideloadly](https://sideloadly.io), advanced users have the option to directly install them using Pixel Perfect. 
+
+In Pixel Perfect, open the File menu and choose “Install Decrypted IPA” to get started. Then, you will be guided to [turn off System Integrity Protection](https://cormiertyshawn895.github.io/instruction/?arch=sip-as-lowering) to maximize app compatibility. After turning off System Integrity Protection, iPhone and iPad apps downloaded from the App Store will no longer open, therefore you can only install and use decrypted iPhone and iPad apps. As a result, this advanced feature works best in a [virtual Mac](https://cormiertyshawn895.github.io/instruction/?arch=sip-as-vm-lowering) through [UTM](https://mac.getutm.app/), [VirtualBudy](https://github.com/insidegui/VirtualBuddy/releases), and [Parallels Desktop](https://www.parallels.com/products/desktop/), [macOS on a separate APFS volume](https://support.apple.com/HT208891), or if you have already turned off System Integrity Protection for other reasons.
 
 #### Can I use Pixel Perfect with Mac Catalyst apps?
 Pixel Perfect only shows iPhone and iPad apps by default, but you can manually add Mac Catalyst apps in Pixel Perfect. 
@@ -73,6 +81,10 @@ Twitter is not compatible with Pixel Perfect.
 #### Can I use Pixel Perfect on Intel-based Mac?
 
 With an Intel-based Mac, you can manually add Mac Catalyst (Scaled to Match iPad) app into Pixel Perfect to run them at native resolution.
+
+#### Why does Pixel Perfect require Full Disk Access?
+
+On macOS Sonoma and later, Full Disk Access is required for utilities such as Pixel Perfect to access and change the settings of other apps.
 
 #### Can I run iPhone and iPad apps at native resolution without using Pixel Perfect?
 
