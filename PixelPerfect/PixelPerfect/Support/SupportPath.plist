@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>LatestVersionNumber</key>
-	<string>1.2</string>
+	<string>1.3</string>
 	<key>LatestBuildNumber</key>
-	<integer>10</integer>
+	<integer>11</integer>
 	<key>LatestZIP</key>
-	<string>https://github.com/cormiertyshawn895/PixelPerfect/releases/download/1.2/PixelPerfect.1.2.zip</string>
+	<string>https://github.com/cormiertyshawn895/PixelPerfect/releases/download/1.3/PixelPerfect.1.3.zip</string>
 	<key>SupportPathURL</key>
 	<string>https://raw.githubusercontent.com/cormiertyshawn895/PixelPerfect/main/PixelPerfect/PixelPerfect/Support/SupportPath.plist</string>
 	<key>ReleasePage</key>

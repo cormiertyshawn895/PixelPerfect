@@ -617,31 +617,35 @@ class ExceptionViewController: NSViewController, NSTableViewDelegate, NSTableVie
         }
         
         let fileManager = FileManager.default
-        let directoryURL = URL(fileURLWithPath: ("~/\(playcoverPathComponents)" as NSString).expandingTildeInPath)
-        do {
-            let contents = try fileManager.contentsOfDirectory(at: directoryURL, includingPropertiesForKeys: nil, options: .skipsHiddenFiles)
-            for item in contents {
-                var isDirectory: ObjCBool = false
-                let path = item.path
-                if fileManager.fileExists(atPath: path, isDirectory: &isDirectory) {
-                    if isDirectory.boolValue && path.hasSuffix(appExtension) {
-                        if let bundle = iOSAppBundle(path: path) {
-                            guard let bundleID = bundle.bundleIdentifier else {
-                                continue
-                            }
-                            if (seenSet.contains(bundleID) == false) {
-                                bundle.preloadData()
-                                apps.append(bundle)
-                                seenSet.append(bundleID)
+        func updatePlayCoverApps(forComponents: String) {
+            let directoryURL = URL(fileURLWithPath: ("~/\(forComponents)" as NSString).expandingTildeInPath)
+            do {
+                let contents = try fileManager.contentsOfDirectory(at: directoryURL, includingPropertiesForKeys: nil, options: .skipsHiddenFiles)
+                for item in contents {
+                    var isDirectory: ObjCBool = false
+                    let path = item.path
+                    if fileManager.fileExists(atPath: path, isDirectory: &isDirectory) {
+                        if isDirectory.boolValue && path.hasSuffix(appExtension) {
+                            if let bundle = iOSAppBundle(path: path) {
+                                guard let bundleID = bundle.bundleIdentifier else {
+                                    continue
+                                }
+                                if (seenSet.contains(bundleID) == false) {
+                                    bundle.preloadData()
+                                    apps.append(bundle)
+                                    seenSet.append(bundleID)
+                                }
                             }
                         }
                     }
                 }
+            } catch {
+                print("Error while enumerating files: \(error.localizedDescription)")
             }
-        } catch {
-            print("Error while enumerating files: \(error.localizedDescription)")
         }
-        
+        updatePlayCoverApps(forComponents: playcoverPathComponents)
+        updatePlayCoverApps(forComponents: playcover3PathComponents)
+
         apps.sort { app1, app2 in
             return app1.displayName.compare(app2.displayName, locale: NSLocale.current) == .orderedAscending
         }
