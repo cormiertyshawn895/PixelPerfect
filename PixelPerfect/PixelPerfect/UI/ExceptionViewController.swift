@@ -986,9 +986,11 @@ class ExceptionViewController: NSViewController, NSTableViewDelegate, NSTableVie
         print("Make executable result \(result)")
 
         let pluginsPath = appBundlePath.appendingPathComponent("PlugIns")
+        let extensionsPath = appBundlePath.appendingPathComponent("Extensions")
         let frameworksPath = appBundlePath.appendingPathComponent("Frameworks")
         let watchAppsPath = appBundlePath.appendingPathComponent("Watch")
         _ = signEmbeddedComponents(atPath: pluginsPath)
+        _ = signEmbeddedComponents(atPath: extensionsPath)
         _ = signEmbeddedComponents(atPath: frameworksPath)
         _ = signEmbeddedComponents(atPath: watchAppsPath)
         _ = signComponent(at: appBundlePath)

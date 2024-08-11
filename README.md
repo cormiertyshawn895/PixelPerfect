@@ -1,13 +1,13 @@
-<a href="https://github.com/cormiertyshawn895/PixelPerfect/releases/download/1.3/PixelPerfect.1.3.zip" alt="Download Pixel Perfect"><img src="PixelPerfect/Screenshots/icon.png" width="150" alt="Pixel Perfect App icon" align="left"/></a>
+<a href="https://github.com/cormiertyshawn895/PixelPerfect/releases/download/1.4/PixelPerfect.1.4.zip" alt="Download Pixel Perfect"><img src="PixelPerfect/Screenshots/icon.png" width="150" alt="Pixel Perfect App icon" align="left"/></a>
 
 <div>
 <h2>Pixel Perfect</h2>
-<p>Pixel Perfect lets you increase the text size of iPhone and iPad apps on Mac. Say goodbye to small and blurry text, and enjoy pixel-perfect graphics, all rendered at 100% native resolution. Compatible with <a href="https://www.apple.com/macos/sonoma-preview/">macOS Sonoma</a>, <a href="https://apps.apple.com/app/macos-ventura/id1638787999">macOS Ventura</a>, <a href="https://apps.apple.com/app/macos-monterey/id1576738294">macOS Monterey</a>, and <a href="https://apps.apple.com/app/macos-big-sur/id1526878132">macOS Big Sur</a>.</p>
+<p>Pixel Perfect lets you increase the text size of iPhone and iPad apps on Mac. Say goodbye to small and blurry text, and enjoy pixel-perfect graphics, all rendered at 100% native resolution.
 </div>
 
 
 <p align="center">
-  <a href="https://github.com/cormiertyshawn895/PixelPerfect/releases/download/1.3/PixelPerfect.1.3.zip" alt="Download Pixel Perfect"><img width="240" src="PixelPerfect/Screenshots/resources/download-button.png" alt="Download Pixel Perfect"></a>
+  <a href="https://github.com/cormiertyshawn895/PixelPerfect/releases/download/1.4/PixelPerfect.1.4.zip" alt="Download Pixel Perfect"><img width="240" src="PixelPerfect/Screenshots/resources/download-button.png" alt="Download Pixel Perfect"></a>
 <p>
 <p align="center">
   <a href="https://github.com/cormiertyshawn895/PixelPerfect/releases" alt="View Release Page"><img width="160" src="PixelPerfect/Screenshots/resources/release-button.png" alt="View Release Page"></a>
@@ -21,13 +21,11 @@ Since its inception, Pixel Perfect has been featured by [AAPL Ch.](https://apple
 
 ### Opening Pixel Perfect
 
-After downloading Pixel Perfect, double click to open it. macOS may prompt you “Pixel Perfect cannot be opened because it is from an unidentified developer.” This is expected. 
+After downloading Pixel Perfect, double click to open it. macOS may prompt you “Pixel Perfect cannot be opened because it is from an unidentified developer.” This is expected.
 
-To open Pixel Perfect, [right-click](https://support.apple.com/HT207700) on Pixel Perfect, then click “Open” as shown below.
+To open Pixel Perfect, navigate to System Settings > Privacy & Security, then scroll down and click [“Open Anyway”](https://support.apple.com/102445#openanyway).
 
 ![](PixelPerfect/Screenshots/screenshot-gatekeeper.jpg)
-
-If you right-clicked when opening Pixel Perfect for the first time, you may need to [right-click](https://support.apple.com/HT207700) for a second time. If Pixel Perfect still can’t be opened, navigate to System Settings > Privacy & Security, then scroll down and click [“Open Anyway”](https://support.apple.com/HT202491) to open Pixel Perfect.
 
 Pixel Perfect will not harm your Mac. This alert shows up because Pixel Perfect is not notarized. Pixel Perfect is [open source](https://github.com/cormiertyshawn895/PixelPerfect), so you can always [examine its source code](https://github.com/cormiertyshawn895/PixelPerfect/tree/master/PixelPerfect) to verify its inner working.
 

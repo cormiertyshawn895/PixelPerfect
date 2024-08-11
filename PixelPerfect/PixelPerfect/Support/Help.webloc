@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>CFBundleDisplayName</key>
-    <string>Mikäli Pixel Perfect ei avaudu, mitä tulisi tehdä</string>
+	<key>URL</key>
+	<string>https://support.apple.com/102445#openanyway</string>
 </dict>
 </plist>
