@@ -81,21 +81,21 @@ class ExceptionViewController: NSViewController, NSTableViewDelegate, NSTableVie
     
     func updateTableViewMenu() {
         let menu = NSMenu()
-        menu.addItem(NSMenuItem(title: "Reset".localized, action: #selector(tableViewResetItemClicked(_:)), keyEquivalent: ""))
+        menu.addItem(NSMenuItem(title: "Reset".localized, action: #selector(tableViewResetItemClicked(_:)), keyEquivalent: "", symbolName: "arrow.clockwise"))
         menu.addItem(NSMenuItem.separator())
-        menu.addItem(NSMenuItem(title: "Show in Finder".localized, action: #selector(tableViewShowClickedItemInFinderClicked(_:)), keyEquivalent: ""))
+        menu.addItem(NSMenuItem(title: "Show in Finder".localized, action: #selector(tableViewShowClickedItemInFinderClicked(_:)), keyEquivalent: "", symbolName: "finder"))
         if (SystemInformation.shared.canInstallAnyIPA) {
             menu.addItem(NSMenuItem.separator())
-            menu.addItem(NSMenuItem(title: iOSAppIdiom.phone.description, action: #selector(tableViewUsePhoneIdiomClicked(_:)), keyEquivalent: ""))
-            menu.addItem(NSMenuItem(title: iOSAppIdiom.pad.description, action: #selector(tableViewUsePadIdiomClicked(_:)), keyEquivalent: ""))
-            menu.addItem(NSMenuItem(title: iOSAppIdiom.resizablePad.description, action: #selector(tableViewUseResizablePadIdiomClicked(_:)), keyEquivalent: ""))
-            menu.addItem(NSMenuItem(title: iOSAppIdiom.fullScreen.description, action: #selector(tableViewUseFullScreenGameIdiomClicked(_:)), keyEquivalent: ""))
+            menu.addItem(NSMenuItem(title: iOSAppIdiom.phone.description, action: #selector(tableViewUsePhoneIdiomClicked(_:)), keyEquivalent: "", symbolName: "iphone"))
+            menu.addItem(NSMenuItem(title: iOSAppIdiom.pad.description, action: #selector(tableViewUsePadIdiomClicked(_:)), keyEquivalent: "", symbolName: "ipad"))
+            menu.addItem(NSMenuItem(title: iOSAppIdiom.resizablePad.description, action: #selector(tableViewUseResizablePadIdiomClicked(_:)), keyEquivalent: "", symbolName: "square.resize"))
+            menu.addItem(NSMenuItem(title: iOSAppIdiom.fullScreen.description, action: #selector(tableViewUseFullScreenGameIdiomClicked(_:)), keyEquivalent: "", symbolName: "arrow.up.backward.and.arrow.down.forward.rectangle"))
         }
         if (AppDelegate.showDebugOptions) {
             menu.addItem(NSMenuItem.separator())
-            menu.addItem(NSMenuItem(title: "Copy Bundle Identifier".localized, action: #selector(tableViewCopyBundleIdentifierClicked(_:)), keyEquivalent: ""))
-            menu.addItem(NSMenuItem(title: "Copy Preferences Domain".localized, action: #selector(tableViewCopyPreferencesPathClicked(_:)), keyEquivalent: ""))
-            menu.addItem(NSMenuItem(title: "Show Preferences".localized, action: #selector(tableViewShowPreferencesClicked(_:)), keyEquivalent: ""))
+            menu.addItem(NSMenuItem(title: "Copy Bundle Identifier".localized, action: #selector(tableViewCopyBundleIdentifierClicked(_:)), keyEquivalent: "", symbolName: "document.on.document"))
+            menu.addItem(NSMenuItem(title: "Copy Preferences Domain".localized, action: #selector(tableViewCopyPreferencesPathClicked(_:)), keyEquivalent: "", symbolName: "globe"))
+            menu.addItem(NSMenuItem(title: "Show Preferences".localized, action: #selector(tableViewShowPreferencesClicked(_:)), keyEquivalent: "", symbolName: "gear"))
         }
         tableView.menu = menu
     }
@@ -209,7 +209,7 @@ class ExceptionViewController: NSViewController, NSTableViewDelegate, NSTableVie
     @IBAction func addButtonClicked(_ sender: Any) {
         let candidateSources: [NSRunningApplication] = NSWorkspace.shared.runningApplications
         let menu = NSMenu()
-        menu.addItem(NSMenuItem(title: "Choose App…".localized, action: #selector(chooseAppToAdd(_:)), keyEquivalent: ""))
+        menu.addItem(NSMenuItem(title: "Choose App…".localized, action: #selector(chooseAppToAdd(_:)), keyEquivalent: "", symbolName: "arrow.up.forward"))
         menu.addItem(NSMenuItem.separator())
         if (candidateSources.count > 0) {
             menu.addItem(NSMenuItem.separator())
@@ -226,7 +226,7 @@ class ExceptionViewController: NSViewController, NSTableViewDelegate, NSTableVie
                 if (exception.isNativeScaling) {
                     continue
                 }
-                let menuItem = NSMenuItem(title: exception.displayName, action: #selector(addFromCandidateSource(_:)), keyEquivalent: "")
+                let menuItem = NSMenuItem(title: exception.displayName, action: #selector(addFromCandidateSource(_:)), keyEquivalent: "", symbolName: "app.grid")
                 if let imageCopy = exception.icon.copy() as? NSImage {
                     imageCopy.size = NSSize(width: 18, height: 18)
                     menuItem.image = imageCopy
@@ -237,8 +237,8 @@ class ExceptionViewController: NSViewController, NSTableViewDelegate, NSTableVie
         }
         if (SystemInformation.shared.isAppleSilicon) {
             menu.addItem(NSMenuItem.separator())
-            menu.addItem(NSMenuItem(title: "Install Decrypted IPA…".localized, action: #selector(chooseDecryptedIPA(_:)), keyEquivalent: ""))
-            menu.addItem(NSMenuItem(title: "Download Decrypted IPA…".localized, action: #selector(downloadDecryptedIPA(_:)), keyEquivalent: ""))
+            menu.addItem(NSMenuItem(title: "Install Decrypted IPA…".localized, action: #selector(chooseDecryptedIPA(_:)), keyEquivalent: "", symbolName: "plus.square"))
+            menu.addItem(NSMenuItem(title: "Download Decrypted IPA…".localized, action: #selector(downloadDecryptedIPA(_:)), keyEquivalent: "", symbolName: "square.and.arrow.down"))
         }
         let point = NSPoint(x: 0, y: addButton.bounds.size.height)
         menu.popUp(positioning: nil, at: point, in: addButton)

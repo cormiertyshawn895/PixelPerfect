@@ -1,4 +1,4 @@
-<a href="https://github.com/cormiertyshawn895/PixelPerfect/releases/download/1.4/PixelPerfect.1.4.zip" alt="Download Pixel Perfect"><img src="PixelPerfect/Screenshots/icon.png" width="150" alt="Pixel Perfect App icon" align="left"/></a>
+<a href="https://github.com/cormiertyshawn895/PixelPerfect/releases/download/1.5/PixelPerfect.1.5.zip" alt="Download Pixel Perfect"><img src="PixelPerfect/Screenshots/icon.png" width="150" alt="Pixel Perfect App icon" align="left"/></a>
 
 <div>
 <h2>Pixel Perfect</h2>
@@ -7,7 +7,7 @@
 
 
 <p align="center">
-  <a href="https://github.com/cormiertyshawn895/PixelPerfect/releases/download/1.4/PixelPerfect.1.4.zip" alt="Download Pixel Perfect"><img width="240" src="PixelPerfect/Screenshots/resources/download-button.png" alt="Download Pixel Perfect"></a>
+  <a href="https://github.com/cormiertyshawn895/PixelPerfect/releases/download/1.5/PixelPerfect.1.5.zip" alt="Download Pixel Perfect"><img width="240" src="PixelPerfect/Screenshots/resources/download-button.png" alt="Download Pixel Perfect"></a>
 <p>
 <p align="center">
   <a href="https://github.com/cormiertyshawn895/PixelPerfect/releases" alt="View Release Page"><img width="160" src="PixelPerfect/Screenshots/resources/release-button.png" alt="View Release Page"></a>

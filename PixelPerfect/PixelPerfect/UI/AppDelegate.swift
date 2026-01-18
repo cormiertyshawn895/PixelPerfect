@@ -108,7 +108,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
     
-    @IBAction func openHelpClicked(_ sender: Any) {
+    @IBAction func showHelp(_ sender: Any) {
         AppDelegate.safelyOpenURL("https://github.com/cormiertyshawn895/PixelPerfect#using-pixel-perfect")
     }
     

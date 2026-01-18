@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="24506"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="System colors introduced in macOS 10.14" minToolsVersion="10.0"/>
@@ -25,7 +25,7 @@
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Check for Updates..." id="V3T-w1-ZzY">
+                                        <menuItem title="Check for Updates..." secondaryImage="square.and.arrow.down" catalog="system" id="V3T-w1-ZzY">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="checkForUpdates:" target="Voe-Tx-rLC" id="f8t-l0-hWC"/>
@@ -67,18 +67,18 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="File" id="bib-Uj-vzu">
                                     <items>
-                                        <menuItem title="Choose App…" keyEquivalent="o" id="V1K-p2-PUC">
+                                        <menuItem title="Choose App…" secondaryImage="arrow.up.forward" catalog="system" keyEquivalent="o" id="V1K-p2-PUC">
                                             <connections>
                                                 <action selector="chooseAppClicked:" target="Voe-Tx-rLC" id="G7V-hv-cqC"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="ckT-Hp-zyG"/>
-                                        <menuItem title="Install Decrypted IPA…" keyEquivalent="i" id="jDU-oL-AIt">
+                                        <menuItem title="Install Decrypted IPA…" secondaryImage="plus.app" catalog="system" keyEquivalent="i" id="jDU-oL-AIt">
                                             <connections>
                                                 <action selector="installDecryptedIPAClicked:" target="Voe-Tx-rLC" id="A1d-f1-W9P"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Download Decrypted IPA…" keyEquivalent="d" id="n3r-Fn-xnx">
+                                        <menuItem title="Download Decrypted IPA…" secondaryImage="square.and.arrow.down" catalog="system" keyEquivalent="d" id="n3r-Fn-xnx">
                                             <connections>
                                                 <action selector="downloadDecryptedIPAClicked:" target="Voe-Tx-rLC" id="zri-wP-cdH"/>
                                             </connections>
@@ -96,12 +96,12 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="View" id="HyV-fh-RgO">
                                     <items>
-                                        <menuItem title="Reload" keyEquivalent="r" id="MES-zl-kn3">
+                                        <menuItem title="Reload" secondaryImage="arrow.clockwise" catalog="system" keyEquivalent="r" id="MES-zl-kn3">
                                             <connections>
                                                 <action selector="reloadClicked:" target="Voe-Tx-rLC" id="s8Y-Vq-TFa"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Show Debug Options" id="dz4-3s-ctT">
+                                        <menuItem title="Show Debug Options" secondaryImage="ant" catalog="system" id="dz4-3s-ctT">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="toggleShowDebugOptions:" target="Voe-Tx-rLC" id="MHc-Xv-vyB"/>
@@ -148,36 +148,36 @@
                                     <items>
                                         <menuItem title="Pixel Perfect Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
-                                                <action selector="openHelpClicked:" target="Voe-Tx-rLC" id="MXz-ue-B8X"/>
+                                                <action selector="showHelp:" target="Voe-Tx-rLC" id="Dcq-9u-M6g"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Project Page" id="HGw-ca-BVt">
+                                        <menuItem title="Project Page" secondaryImage="globe" catalog="system" id="HGw-ca-BVt">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="openProjectPageClicked:" target="Voe-Tx-rLC" id="9ix-3Z-LvA"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="6Ju-Be-q1g"/>
-                                        <menuItem title="Check for Updates..." id="7Sf-6F-PYP">
+                                        <menuItem title="Check for Updates..." secondaryImage="square.and.arrow.down" catalog="system" id="7Sf-6F-PYP">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="checkForUpdates:" target="Voe-Tx-rLC" id="sUO-FP-xoO"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="pQ7-Ex-PLu"/>
-                                        <menuItem title="Troubleshooting Tips" id="081-Zm-KOJ">
+                                        <menuItem title="Troubleshooting Tips" secondaryImage="questionmark.text.page" catalog="system" id="081-Zm-KOJ">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="tipsClicked:" target="Voe-Tx-rLC" id="PM0-ix-Kec"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Get Help from Community" id="orx-WS-NYi">
+                                        <menuItem title="Get Help from Community" secondaryImage="person.3" catalog="system" id="orx-WS-NYi">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="issueTracker:" target="Voe-Tx-rLC" id="OSw-69-exM"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Send Feedback" id="Kn8-XW-HmN">
+                                        <menuItem title="Send Feedback" secondaryImage="exclamationmark.bubble" catalog="system" id="Kn8-XW-HmN">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="openIssue:" target="Voe-Tx-rLC" id="Z3P-9c-cRc"/>
@@ -233,22 +233,22 @@
             <objects>
                 <viewController storyboardIdentifier="ExceptionViewController" id="O4d-da-WSB" customClass="ExceptionViewController" customModule="Pixel_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="t5I-sr-Y9J">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="689"/>
+                        <rect key="frame" x="0.0" y="0.0" width="322" height="689"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <visualEffectView blendingMode="behindWindow" material="underWindowBackground" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="cxh-a2-Xky">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="689"/>
+                                <rect key="frame" x="0.0" y="0.0" width="322" height="689"/>
                                 <subviews>
-                                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="hu7-Yf-HtG">
-                                        <rect key="frame" x="18" y="634" width="284" height="17"/>
+                                    <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="hu7-Yf-HtG">
+                                        <rect key="frame" x="18" y="634" width="286" height="17"/>
                                         <textFieldCell key="cell" title="Pixel Perfect" id="y80-Sh-8yF">
                                             <font key="font" metaFont="systemBold" size="14"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="ZLp-ls-7Qe">
-                                        <rect key="frame" x="18" y="578" width="284" height="48"/>
+                                    <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="ZLp-ls-7Qe">
+                                        <rect key="frame" x="18" y="578" width="286" height="48"/>
                                         <textFieldCell key="cell" title="Enable iPhone and iPad apps to run at native resolution with pixel-perfect graphics and razor sharp text." id="IAR-Nf-69C">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -256,24 +256,24 @@
                                         </textFieldCell>
                                     </textField>
                                     <box boxType="custom" cornerRadius="6" translatesAutoresizingMaskIntoConstraints="NO" id="6cp-Rj-thO">
-                                        <rect key="frame" x="20" y="68" width="280" height="498"/>
+                                        <rect key="frame" x="20" y="68" width="282" height="498"/>
                                         <view key="contentView" id="HgK-Ph-XPv">
-                                            <rect key="frame" x="1" y="1" width="278" height="496"/>
+                                            <rect key="frame" x="1" y="1" width="280" height="496"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="48" horizontalPageScroll="10" verticalLineScroll="48" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixY-1b-nvB">
-                                                    <rect key="frame" x="0.0" y="31" width="278" height="465"/>
+                                                    <rect key="frame" x="0.0" y="31" width="280" height="465"/>
                                                     <clipView key="contentView" drawsBackground="NO" id="C6A-6G-SfV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="278" height="465"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="465"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
                                                             <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" tableStyle="fullWidth" alternatingRowBackgroundColors="YES" columnReordering="NO" columnResizing="NO" autosaveColumns="NO" rowHeight="48" rowSizeStyle="automatic" viewBased="YES" id="CTv-PX-vuI" customClass="ExceptionTableView" customModule="Pixel_Perfect" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="278" height="465"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="280" height="465"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                                 <tableColumns>
-                                                                    <tableColumn width="266" minWidth="40" maxWidth="1000" id="CTJ-vI-ktd">
+                                                                    <tableColumn width="268" minWidth="40" maxWidth="1000" id="CTJ-vI-ktd">
                                                                         <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                                             <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                             <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -286,7 +286,7 @@
                                                                         <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                         <prototypeCellViews>
                                                                             <tableCellView identifier="AppCellID" id="lUA-dn-5U2" customClass="AppExceptionTableCellView" customModule="Pixel_Perfect" customModuleProvider="target">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="278" height="48"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="280" height="48"/>
                                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                                 <subviews>
                                                                                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="twO-ZA-wE1">
@@ -297,8 +297,8 @@
                                                                                         </constraints>
                                                                                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="GenericAppIcon" id="6r6-hM-Y8I"/>
                                                                                     </imageView>
-                                                                                    <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xzQ-rn-ujD">
-                                                                                        <rect key="frame" x="40" y="16" width="201" height="16"/>
+                                                                                    <textField focusRingType="none" horizontalHuggingPriority="249" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xzQ-rn-ujD">
+                                                                                        <rect key="frame" x="40" y="16" width="193" height="16"/>
                                                                                         <textFieldCell key="cell" lineBreakMode="truncatingTail" title="App" id="Wxv-iP-hRi">
                                                                                             <font key="font" metaFont="system"/>
                                                                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -306,7 +306,7 @@
                                                                                         </textFieldCell>
                                                                                     </textField>
                                                                                     <switch horizontalHuggingPriority="750" verticalHuggingPriority="750" controlSize="mini" baseWritingDirection="leftToRight" alignment="left" translatesAutoresizingMaskIntoConstraints="NO" id="qW5-AJ-vSZ">
-                                                                                        <rect key="frame" x="246" y="16" width="28" height="16"/>
+                                                                                        <rect key="frame" x="239" y="16" width="36" height="16"/>
                                                                                         <constraints>
                                                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="26" id="SzM-Lh-Er7"/>
                                                                                         </constraints>
@@ -350,16 +350,16 @@
                                                     </scroller>
                                                 </scrollView>
                                                 <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="BVC-1O-smk">
-                                                    <rect key="frame" x="0.0" y="28" width="278" height="5"/>
+                                                    <rect key="frame" x="0.0" y="28" width="280" height="5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="9oq-tE-C7o"/>
                                                     </constraints>
                                                 </box>
                                                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="6sy-EB-wE2">
-                                                    <rect key="frame" x="0.0" y="-5" width="278" height="41"/>
+                                                    <rect key="frame" x="0.0" y="-5" width="280" height="41"/>
                                                     <subviews>
-                                                        <button verticalHuggingPriority="750" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WG0-du-6Ef">
-                                                            <rect key="frame" x="10" y="13" width="71" height="16"/>
+                                                        <button imageHugsTitle="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WG0-du-6Ef">
+                                                            <rect key="frame" x="10" y="13" width="73" height="16"/>
                                                             <buttonCell key="cell" type="bevel" title="Add App" bezelStyle="rounded" image="plus" catalog="system" imagePosition="leading" alignment="center" imageScaling="proportionallyDown" inset="2" id="NBe-PV-Qww">
                                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                 <font key="font" metaFont="system"/>
@@ -370,7 +370,7 @@
                                                             </connections>
                                                         </button>
                                                         <box horizontalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="9JT-wm-UZa">
-                                                            <rect key="frame" x="87" y="13" width="5" height="16"/>
+                                                            <rect key="frame" x="89" y="13" width="5" height="16"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="1" id="FgX-7I-zUW"/>
                                                                 <constraint firstAttribute="height" constant="16" id="igN-J1-UzM"/>
@@ -386,21 +386,21 @@
                                                     </constraints>
                                                 </customView>
                                                 <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="4" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sJJ-AJ-OTv">
-                                                    <rect key="frame" x="114" y="189" width="50" height="118"/>
+                                                    <rect key="frame" x="115" y="189" width="50" height="118"/>
                                                     <subviews>
                                                         <progressIndicator wantsLayer="YES" maxValue="100" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="8Ch-tZ-U58">
                                                             <rect key="frame" x="17" y="102" width="16" height="16"/>
                                                         </progressIndicator>
                                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="Jn8-5b-CoJ">
                                                             <rect key="frame" x="3" y="54" width="44" height="44"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" secondItem="Jn8-5b-CoJ" secondAttribute="height" id="JRF-8W-fz1"/>
-                                                                <constraint firstAttribute="height" constant="44" id="c6h-HQ-Bjo"/>
-                                                            </constraints>
                                                             <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="iphone.and.ipad.fallback" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="YSP-TB-MvK">
                                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                 <font key="font" metaFont="system"/>
                                                             </buttonCell>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="Jn8-5b-CoJ" secondAttribute="height" id="JRF-8W-fz1"/>
+                                                                <constraint firstAttribute="height" constant="44" id="c6h-HQ-Bjo"/>
+                                                            </constraints>
                                                             <connections>
                                                                 <action selector="loadingButtonClicked:" target="O4d-da-WSB" id="yRe-zx-otO"/>
                                                             </connections>
@@ -447,10 +447,10 @@
                                         <color key="borderColor" name="BoxBorderColor"/>
                                     </box>
                                     <stackView distribution="fillEqually" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="reT-Eb-ke5">
-                                        <rect key="frame" x="20" y="20" width="280" height="28"/>
+                                        <rect key="frame" x="20" y="20" width="282" height="28"/>
                                         <subviews>
-                                            <button wantsLayer="YES" verticalHuggingPriority="750" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J4k-fL-2JL">
-                                                <rect key="frame" x="-6" y="-6" width="148" height="40"/>
+                                            <button wantsLayer="YES" imageHugsTitle="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="J4k-fL-2JL">
+                                                <rect key="frame" x="0.0" y="0.0" width="137" height="28"/>
                                                 <buttonCell key="cell" type="push" title="Reset All" bezelStyle="rounded" alignment="center" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cOf-V0-dtx">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
@@ -460,7 +460,7 @@
                                                 </connections>
                                             </button>
                                             <button wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pnc-mZ-evR">
-                                                <rect key="frame" x="138" y="-6" width="148" height="40"/>
+                                                <rect key="frame" x="145" y="0.0" width="137" height="28"/>
                                                 <buttonCell key="cell" type="push" title="Enable All" bezelStyle="rounded" alignment="center" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fSV-R6-sjR">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
@@ -483,7 +483,7 @@ DQ
                                         </customSpacing>
                                     </stackView>
                                     <button hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PHq-8a-L55">
-                                        <rect key="frame" x="210" y="663" width="102" height="18"/>
+                                        <rect key="frame" x="214" y="663" width="100" height="18"/>
                                         <buttonCell key="cell" type="inline" title="Update Available" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="taZ-O3-hGi">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="smallSystemBold"/>
@@ -560,7 +560,7 @@ DQ
                                 </constraints>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSApplicationIcon" id="n9L-88-Mni"/>
                             </imageView>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="6F8-ax-W8l">
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="6F8-ax-W8l">
                                 <rect key="frame" x="53" y="29" width="304" height="14"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="LFA-Bx-KMn"/>
@@ -571,7 +571,7 @@ DQ
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <progressIndicator maxValue="100" indeterminate="YES" controlSize="small" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="XYb-Rf-QWX">
+                            <progressIndicator wantsLayer="YES" maxValue="100" indeterminate="YES" controlSize="small" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="XYb-Rf-QWX">
                                 <rect key="frame" x="55" y="15" width="300" height="12"/>
                             </progressIndicator>
                         </subviews>
@@ -608,21 +608,21 @@ DQ
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hMf-ed-zR8">
                                 <rect key="frame" x="264" y="293" width="24" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="7Ts-Kf-aPm"/>
-                                    <constraint firstAttribute="width" constant="24" id="Ge0-ng-4wF"/>
-                                </constraints>
                                 <buttonCell key="cell" type="bevel" bezelStyle="rounded" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="uaq-k8-5as">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                     <imageReference key="image" image="xmark.circle.fill" catalog="system" symbolScale="large"/>
                                 </buttonCell>
                                 <color key="contentTintColor" red="0.74901968240000005" green="0.74901968240000005" blue="0.74901968240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="7Ts-Kf-aPm"/>
+                                    <constraint firstAttribute="width" constant="24" id="Ge0-ng-4wF"/>
+                                </constraints>
                                 <connections>
                                     <action selector="closeButtonClicked:" target="hrm-DL-FOH" id="euz-TS-6xs"/>
                                 </connections>
                             </button>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="HgW-Oa-vun">
+                            <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="HgW-Oa-vun">
                                 <rect key="frame" x="18" y="290" width="242" height="17"/>
                                 <textFieldCell key="cell" id="BnG-N7-N8X">
                                     <font key="font" metaFont="systemBold" size="14"/>
@@ -633,7 +633,7 @@ DQ
                             <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="a1y-07-PEK">
                                 <rect key="frame" x="20" y="272" width="258" height="5"/>
                             </box>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="dhl-dJ-8LD">
+                            <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="dhl-dJ-8LD">
                                 <rect key="frame" x="18" y="243" width="262" height="16"/>
                                 <textFieldCell key="cell" id="fy3-hi-C9X">
                                     <font key="font" metaFont="system"/>
@@ -653,19 +653,19 @@ DQ
                                 </connections>
                             </button>
                             <box titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="4nY-6k-pWx">
-                                <rect key="frame" x="62" y="46" width="174" height="174"/>
+                                <rect key="frame" x="65" y="50" width="168" height="168"/>
                                 <view key="contentView" id="1yN-Gi-qMk">
-                                    <rect key="frame" x="4" y="5" width="166" height="166"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="168" height="168"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Av3-zA-SD2">
-                                            <rect key="frame" x="14" y="12" width="140" height="140"/>
+                                            <rect key="frame" x="14" y="14" width="140" height="140"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="hVP-YN-vet"/>
                                             <color key="contentTintColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                         </imageView>
-                                        <progressIndicator fixedFrame="YES" maxValue="100" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="yTO-wd-5TW">
-                                            <rect key="frame" x="76" y="74" width="16" height="16"/>
+                                        <progressIndicator wantsLayer="YES" fixedFrame="YES" maxValue="100" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="yTO-wd-5TW">
+                                            <rect key="frame" x="76" y="76" width="16" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         </progressIndicator>
                                     </subviews>
@@ -713,8 +713,17 @@ DQ
     <resources>
         <image name="GenericAppIcon" width="64" height="64"/>
         <image name="NSApplicationIcon" width="32" height="32"/>
+        <image name="ant" catalog="system" width="14" height="18"/>
+        <image name="arrow.clockwise" catalog="system" width="14" height="16"/>
+        <image name="arrow.up.forward" catalog="system" width="13" height="12"/>
+        <image name="exclamationmark.bubble" catalog="system" width="17" height="16"/>
+        <image name="globe" catalog="system" width="15" height="15"/>
         <image name="iphone.and.ipad.fallback" width="110" height="88"/>
+        <image name="person.3" catalog="system" width="28" height="15"/>
         <image name="plus" catalog="system" width="14" height="13"/>
+        <image name="plus.app" catalog="system" width="15" height="14"/>
+        <image name="questionmark.text.page" catalog="system" width="14" height="16"/>
+        <image name="square.and.arrow.down" catalog="system" width="15" height="17"/>
         <image name="xmark.circle.fill" catalog="system" width="20" height="20"/>
         <namedColor name="BoxBorderColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="0.11999999731779099" colorSpace="custom" customColorSpace="displayP3"/>
